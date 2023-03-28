@@ -21,15 +21,6 @@ def main(page: ft.Page):
                                              padding = 0,
                                              margin = 0)
     
-    def open_image(image_path):
-        return ft.Image(
-            src = image_path,
-            width = 200,
-            height = 400,
-            fit = ft.ImageFit.COVER,
-            repeat = ft.ImageRepeat.NO_REPEAT,
-            border_radius = ft.border_radius.all(10))
-    
     def select_images_result(e: ft.FilePickerResultEvent):
         
         if e.files is None:
