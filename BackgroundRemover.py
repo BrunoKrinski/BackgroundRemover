@@ -30,20 +30,21 @@ def main(page: ft.Page):
         if platform == "linux" or platform == "linux2":
             weight_path = f""
             cp = f""
+            #todo
+            return
         elif platform == "win32":
             weight_path = f"C:\\Users\\{usr}\\.u2net\\u2net.onnx"
             cp = f"copy assets\\u2net.onnx {weight_path}"
         
         weight_path = Path(weight_path)
-        #os.makedirs(images_folder, exist_ok = True)
-        
+            
         if not Path.exists(weight_path):
             if not Path.exists(weight_path.parent):
                 print('creating directory')
                 os.makedirs(weight_path.parent, exist_ok = True)
             print('copying file')        
             os.system(cp)
-        '''
+        
         total = len(e.files)
         
         pb_container.height = 0
@@ -85,8 +86,7 @@ def main(page: ft.Page):
         
         status.size = 0
         status.update()
-        '''
-            
+                    
     select_images_dialog = ft.FilePicker(on_result = select_images_result)
     page.overlay.append(select_images_dialog)
     
@@ -198,16 +198,10 @@ def main(page: ft.Page):
     main_col = ft.Column(
         expand = True,
         height = page.height,
-        #alignment = ft.MainAxisAlignment.SPACE_BETWEEN,
         horizontal_alignment = ft.CrossAxisAlignment.CENTER,
         controls = [
             title,
             main_row,
-            #pb,
-            #images,
-            #space(15),
-            #get_files,
-            #space(15),
         ]
     )
         
