@@ -1,7 +1,7 @@
-<h1 align="center">Pinterest Downloader</h1>
+<h1 align="center">Background Remover</h1>
 
 <p align="center">
-  <img src="pinterest_downloader.png" alt="Pinterest Downloader">
+  <img src="background_remover.png" alt="Background Remover">
 </p>
 
 <h2 align="center">Installation: </h2>
@@ -9,17 +9,13 @@
 <h3 align="center">On Windows: </h3>
 
 <h4 align="center">Option 1: </h4>
+<p align="center">Install Python 3.10</p>
 <p align="center">Install Requeriments: pip install -r requeriments.txt</p>
-<p align="center">Execute: python PinterestDownloader.py</p>
+<p align="center">Execute: python BackgroundRemover.py</p>
 
 <h4 align="center">Option 2: </h4>
-<p align="center">Extract the File: PinterestDownloader.zip</p>
-<p align="center">Execute: PinterestDownloader.exe</p>
+<p align="center">Extract the File: BackgroundRemover.zip</p>
+<p align="center">Execute: BackgroundRemover.exe</p>
 
 <h4 align="center">Option 3: </h4>
-<p align="center">Install With: PinterestDownloaderSetup.exe</p>
-
-<h3 align="center">On Linux: </h3>
-
-<p align="center">Install Requeriments: pip install -r requeriments.txt</p>
-<p align="center">Execute: python PinterestDownloader.py</p>
+<p align="center">Install With: BackgroundRemoverSetup.exe</p>
